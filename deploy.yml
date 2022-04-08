@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: <img name>
+        image: devopsintellipaat/app1_08
         ports:
         - containerPort: 80
