@@ -1,2 +1,4 @@
 FROM nginx
-COPY . /usr/share/nginx/html
+RUN apt update && apt install git -y
+RUN rm -rf /usr/share/nginx/html
+RUN git clone https://github.com/dkumarkaran/website.git /usr/share/nginx/html
